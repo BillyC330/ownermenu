@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF--8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OwnerMenu - 掌控您的在线点餐</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">OwnerMenu</h1>
+            <!-- 你可以在这里放一个简单的文本Slogan，或者之后添加图片Logo -->
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>掌控您的在线点餐，拓展餐厅业务新可能</h2>
+            <p class="subtitle">OwnerMenu 专为餐厅老板设计，提供智能、高效的在线菜单管理和订单处理系统。</p>
+            <!-- <a href="#contact" class="cta-button">敬请期待</a> -->
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h3>核心优势</h3>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <img src="icon-menu.png" alt="菜单管理图标" class="feature-icon"> <!-- 替换成你的图标路径或删除 -->
+                    <h4>轻松管理菜单</h4>
+                    <p>随时随地更新菜品、价格和图片，操作简单直观。</p>
+                </div>
+                <div class="feature-item">
+                    <img src="icon-order.png" alt="订单处理图标" class="feature-icon"> <!-- 替换成你的图标路径或删除 -->
+                    <h4>高效订单处理</h4>
+                    <p>即时接收订单通知，优化备餐流程，减少等待时间。</p>
+                </div>
+                <div class="feature-item">
+                    <img src="icon-growth.png" alt="业务增长图标" class="feature-icon"> <!-- 替换成你的图标路径或删除 -->
+                    <h4>拓展在线业务</h4>
+                    <p>提升餐厅在线曝光，吸引更多顾客，增加营业收入。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="coming-soon" id="contact">
+        <div class="container">
+            <h3>敬请期待！</h3>
+            <p>OwnerMenu 即将上线，为您的餐厅带来全新体验。留下您的邮箱，获取最新动态和早期优惠！</p>
+            <!-- 这里你可以放一个Mailchimp等邮件列表的嵌入表单，或者一个简单的mailto链接 -->
+            <form action="YOUR_MAILCHIMP_ACTION_URL" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="请输入您的邮箱地址" required>
+                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_YOUR_MAILCHIMP_USER_ID_AND_LIST_ID" tabindex="-1" value=""></div>
+                    <div class="clear"><input type="submit" value="订阅获取更新" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                </div>
+            </form>
+            <p class="small-text">我们承诺保护您的隐私，绝不发送垃圾邮件。</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© <span id="year"></span> OwnerMenu. 保留所有权利。</p>
+            <!-- 你可以在这里添加更多页脚信息，如联系方式（如果愿意公开） -->
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
